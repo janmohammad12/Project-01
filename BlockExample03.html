@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <style> 
+        .toggle-btn { 
+            padding: 10px 20px; 
+            background-color: #3498db; 
+            color: white; 
+            border: none; 
+            cursor: pointer; 
+            margin: 20px; 
+        } 
+         
+        .secret-content { 
+            padding: 20px; 
+            background-color: #f0f0f0; 
+            border-radius: 8px; 
+            margin: 20px; 
+            transition: all 0.3s ease; 
+        } 
+         
+        /* Classes to control visibility */ 
+        .hidden-display { 
+            display: none; 
+        } 
+         
+        .hidden-visibility { 
+            visibility: hidden; 
+            opacity: 0; 
+		 } 
+         
+        .visible { 
+            display: block; 
+            visibility: visible; 
+            opacity: 1; 
+        } 
+    </style>
+	
+	</head> 
+<body> 
+
+    <button class="toggle-btn" onclick="toggleDisplay()"> 
+        Toggle (display: none) 
+    </button> 
+	
+    <button class="toggle-btn" onclick="toggleVisibility()"> 
+        Toggle (visibility: hidden) 
+    </button> 
+     
+    <div id="content1" class="secret-content"> 
+        <h3>Secret Message 1</h3> 
+        <p>This content toggles with display: none - it completely disappears!</p> 
+    </div> 
+     
+    <div id="content2" class="secret-content"> 
+        <h3>Secret Message 2</h3> 
+        <p>This content toggles with visibility: hidden - space remains!</p> 
+    </div> 
+     
+    <script> 
+        function toggleDisplay() { 
+            const el = document.getElementById('content1'); 
+            if (el.style.display === 'none') { 
+                el.style.display = 'block'; 
+            } else { 
+                el.style.display = 'none'; 
+            } 
+        } 
+         
+        function toggleVisibility() { 
+            const el = document.getElementById('content2'); 
+            if (el.style.visibility === 'hidden') { 
+                el.style.visibility = 'visible'; 
+                el.style.opacity = '1'; 
+			} else { 
+			el.style.visibility = 'hidden'; 
+			el.style.opacity = '0'; 
+		} 
+} 
+</script> 
+</body> 
+</html>

@@ -1,0 +1,109 @@
+
+<style>
+  .magazine-article { 
+    max-width: 700px;      
+    margin: 0 auto;        
+    /* Optimal reading width */ 
+    /* Center the article */ 
+    padding: 2rem; 
+    font-family: 'Georgia', 'Times New Roman', serif; 
+    background: #FFFEF7; 
+  } 
+  .magazine-article h1 { 
+    font-family: 'Helvetica', 'Arial', sans-serif; 
+    font-size: 2.5rem; 
+    font-weight: 800; 
+    text-align: center; 
+    color: #1a1a1a; 
+    letter-spacing: -0.02em;  /* Tighten large headlines */ 
+  } 
+  .magazine-article .byline { 
+    text-align: center; 
+    font-family: sans-serif; 
+    font-size: 0.875rem; 
+    text-decoration: none; 
+    color: #666; 
+    border-bottom: 1px solid #ddd; 
+    padding-bottom: 1rem; 
+  }
+    /* Continuation of magazine styling */ 
+  .magazine-article h2 { 
+    font-family: 'Helvetica', 'Arial', sans-serif; 
+    font-size: 1.75rem; 
+    font-weight: 600; 
+    margin-top: 2rem; 
+    color: #2c3e50; 
+  } 
+  .magazine-article p { 
+  font-size: 1.125rem; 
+  line-height: 1.7;        
+  margin-bottom: 1.2rem; 
+  color: #333; 
+  text-align: left; 
+  } 
+  /* Spacious for readability */ 
+  .magazine-article .highlight { 
+  font-weight: 600; 
+  font-style: italic; 
+  text-align: center; 
+  background: #f0f4f8; 
+  padding: 1.5rem; 
+  border-left: 4px solid #e76f51;
+  font-size: 1.25rem; 
+  line-height: 1.5; 
+  } 
+  .magazine-article .read-more { 
+  text-decoration: none; 
+  font-weight: bold; 
+  color: #1B7F9E; 
+  border-bottom: 2px solid #1B7F9E; 
+  transition: all 0.3s ease; 
+  } 
+  .magazine-article .read-more:hover { 
+  text-decoration: underline; 
+  color: #0B3B5F; 
+  } 
+  /* Responsive typography */ 
+  @media (max-width: 600px) { 
+  .magazine-article h1 { 
+  font-size: 2rem; 
+  } 
+  .magazine-article p { 
+  font-size: 1rem; 
+  line-height: 1.6; 
+  } 
+  } 
+  
+  .box {
+		box-sizing: border-box;
+		width: 690px;
+		height: 690px;
+		padding: 106px;
+		border: 5px solid black;
+		margin: 30px;
+	}
+	.positioned-bg { 
+		background-image: url('image/beach.jpg'); 
+		background-repeat: no-repeat; 
+		/* background-position: top right;   Top-right corner */
+		/* Or: background-position: 20px 30px; (X Y coordinates) */ 
+		background-position: 50% 50%; (center)  
+		background-repeat: repeat;  /* Default - tiles everywhere */
+		background-size:contain; 		
+		
+	}
+</style>
+<article class="magazine-article box positioned-bg"> 
+  <h1>The Future of Web Typography</h1> 
+  <p class="byline">By Jane Designer | March 15, 2026</p> 
+  
+  <h2>The Evolution of Digital Reading</h2> 
+  <p>Typography on the web has come a long way since the early days of the internet. Today, designers have unprecedented con
+  trol over how text appears, thanks to modern CSS capabilities and variable fonts.</p> 
+  <p class="highlight">"Good typography is invisible. Great typography is unforgettable." — Anonymous</p> 
+  
+  <h2>Key Principles for Readability</h2> 
+  <p>Line length, font choice, and spacing work together to create an enjoyable reading experience. Aim for 45-75 characters 
+  per line for optimal readability on desktop screens.</p> 
+  <p><a href="#" class="read-more">Continue reading →</a></p> 
+</article>
